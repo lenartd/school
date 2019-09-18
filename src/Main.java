@@ -2,6 +2,7 @@ public class Main
 {
     public static void main(String[] args)
     {
+
         SlovakLang slov = new SlovakLang();
         System.out.println(slov.formatText("woRD tO convErt"));
 
@@ -11,6 +12,8 @@ public class Main
         Math math = new Math();
         System.out.println(math.reverse(456));
         System.out.println(math.reverse(650));
+
+        System.out.println(math.isPrimeNumber(991));
 
     }
 }
