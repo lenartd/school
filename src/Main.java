@@ -4,6 +4,7 @@ public class Main
     {
 
         SlovakLang slov = new SlovakLang();
+        /*
         System.out.println(slov.formatText("woRD tO convErt"));
 
         English eng = new English();
@@ -15,5 +16,16 @@ public class Main
 
         System.out.println(math.isPrimeNumber(991));
 
+        System.out.println();
+        Other other = new Other();
+
+        System.out.println(other.isEur("025"));
+        System.out.println(other.isEur("1.25eUr"));
+        System.out.println(other.isEur("1.25 eur"));
+        System.out.println(other.isEur("1.25€"));
+        */
+        System.out.println(slov.encrypt('m'));
+
+        //System.out.println(slov.encryptWord("tabu"));
     }
 }

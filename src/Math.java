@@ -1,4 +1,4 @@
-/* Name: Dániel Lénárt */
+
 public class Math extends Subject
 {
     public int reverse(int num)

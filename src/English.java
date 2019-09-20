@@ -1,4 +1,4 @@
-/* Name: Dániel Lénárt */
+
 public class English extends Subject
 {
     public String translate(String word)
