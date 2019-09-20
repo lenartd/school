@@ -24,7 +24,9 @@ public class Main
         System.out.println(other.isEur("1.25 eur"));
         System.out.println(other.isEur("1.25€"));
         */
-        System.out.println(slov.encrypt('m'));
+
+        //System.out.println(slov.encrypt('K'));
+        System.out.println(slov.encrypt3('Z'));
 
         //System.out.println(slov.encryptWord("tabu"));
     }

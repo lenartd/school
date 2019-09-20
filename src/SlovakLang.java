@@ -23,6 +23,7 @@ public class SlovakLang extends Subject
         return done;
     }
 
+    //Misunderstood the exercise, does not work as it should
     public char encrypt(char ucchar)
     {
         String firstFour = Integer.toBinaryString(ucchar >> 4);
@@ -37,6 +38,46 @@ public class SlovakLang extends Subject
 
         return (char)num;
     }
+
+    //Pavlik one
+    public char cryptingChar(char input)
+    {
+        byte firstHalf = (byte) (240&input);
+        byte secondHalf = (byte) (15&input);
+        secondHalf = (byte) (~secondHalf);
+        secondHalf = (byte) (secondHalf&15);
+        int result = (byte) (firstHalf|secondHalf);
+
+        return (char) result;
+    }
+
+    public char encrypt2(char input)
+    {
+        int result = ((input & 15) << 4) + ((input&240) >> 4);
+
+        return (char) result;
+    }
+
+
+    public char encrypt3(char input)
+    {
+        byte bin = (byte)input;
+
+        String bin0 = Integer.toBinaryString(bin);
+        char[] bin1 = bin0.toCharArray();
+        char temp;
+
+        for(int i = 1; i < bin1.length-1; i=i+2)
+        {
+            temp = bin1[i];
+            bin1[i] = bin1[i+1];
+            bin1[i+1] = temp;
+        }
+        System.out.println(bin0);
+        System.out.println(new String(bin1));
+        return (char)bin;
+    }
+
 
     public String encryptWord(String word)
     {
