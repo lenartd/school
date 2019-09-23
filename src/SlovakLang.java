@@ -67,7 +67,7 @@ public class SlovakLang extends Subject
         char[] bin1 = bin0.toCharArray();
         char temp;
 
-        for(int i = 1; i < bin1.length-1; i=i+2)
+        for(int i = 1; i < bin1.length-2; i=i+2)
         {
             temp = bin1[i];
             bin1[i] = bin1[i+1];
@@ -75,7 +75,7 @@ public class SlovakLang extends Subject
         }
         System.out.println(bin0);
         System.out.println(new String(bin1));
-        return (char)bin;
+        return (char)Integer.parseInt(new String(bin1), 2);
     }
 
 
